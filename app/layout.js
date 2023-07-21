@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/styles/globals.css'
 import Nav from '@/components/nav'
 
 export const metadata = {
@@ -9,14 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black">
-        <div className="main">
-          <div className="gradient" />
-        </div>
-        <main className="app">
-          <Nav />
-          {children}
-        </main>
+      <body className="bg-gray-800">
+        <Nav/>
+        {children}
       </body>
     </html>
   )

@@ -20,11 +20,12 @@ const search = () => {
     }
     
     return (
-        <form style={{width: 600}}>
+        <form>
             <input
                 className="search_input"
                 type="text"
                 placeholder="Enter a prompt here"
+                style={{}}
             />
         </form>
     );
