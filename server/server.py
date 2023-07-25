@@ -8,8 +8,7 @@ CORS(app)
 @app.route("/api/home", methods=['GET'])
 def return_home():
     return jsonify({
-        'image': "Placeholder text for image",
-        'people': ['Jack', 'Jill', 'John']
+        'image': "Placeholder Image"
     })
 
 if __name__ == "__main__":

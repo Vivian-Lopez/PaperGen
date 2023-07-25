@@ -1,4 +1,4 @@
-// File: /Users/vivianlopez/REACT_PROJECTS/papergen/client/app/layout.js
+// File: /Users/vivianlopez/REACT_PROJECTS/PaperGen/client/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -26,9 +26,9 @@ const nav = () => {
             alt="linkedin link image"
             width={40}
             height={40}
-            className="pr-2"
+            className="pr-1.5"
         />
-        <p className="font-inter text-gray-200 invisible md:visible">By Vivian Lopez</p>
+        <p className="font-inter text-gray-200 invisible md:visible">By Vivian</p>
       </Link>
     </nav>
   )

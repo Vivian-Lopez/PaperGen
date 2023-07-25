@@ -589,6 +589,12 @@ video {
 .pt-5{
   padding-top: 1.25rem;
 }
+.pr-1{
+  padding-right: 0.25rem;
+}
+.pr-1\.5{
+  padding-right: 0.375rem;
+}
 .font-inter{
   font-family: Inter, sans-serif;
 }
