@@ -13,7 +13,6 @@
 /out/
 /client/.next/
 /client/node_modules/
-
 # production
 /build
 
