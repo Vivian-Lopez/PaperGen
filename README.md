@@ -1,7 +1,6 @@
 ## Current Home Page:
 
-![PaperGen_HomePage](https://github.com/Vivian-Lopez/PaperGen/assets/87879238/a0874b80-4e9c-4fbc-a299-43f830a90785)
-
+<img width="1440" alt="PaperGen_HomePage" src="https://github.com/Vivian-Lopez/PaperGen/assets/87879238/629c5f7a-28f0-430c-babe-3142656d34f0">
 
 ##
 This is a full-stack project that allows you to browse/generate your own wallpapers using Generative Adversarial Networks to create them, and displaying them on a profile page.
