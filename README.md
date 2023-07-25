@@ -10,5 +10,7 @@ Tenchnologies this project uses:
 
 - Next.js framework
 - Tailwind CSS
+- Python
+- Flask
 - MongoDB
 - Google OAuth 2.0
