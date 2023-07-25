@@ -12,5 +12,5 @@ Tenchnologies this project uses:
 - Tailwind CSS
 - Python
 - Flask
-- MongoDB
-- Google OAuth 2.0
+- MongoDB (Planned)
+- Google OAuth 2.0 (Planned)
