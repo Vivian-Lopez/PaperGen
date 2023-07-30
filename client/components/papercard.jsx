@@ -2,26 +2,25 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-import wallpaper from '/public/assets/images/wallpaper.jpeg'
-import axios from 'axios';
-import { env } from 'process';
+const imageUrl = "http://localhost:8080/api/getImage";
 
 const handleImageClick = () => {
   console.log('Image Clicked');
 }
 
 const Papercard = () => {
-  const [image, setImage] = useState("Lodaing");
+  const [img, setImg] = useState();
+
+  const fetchImage = async () => {
+    const res = await fetch(imageUrl);
+    const imageBlob = await res.blob();
+    const imageObjectURL = URL.createObjectURL(imageBlob);
+    setImg(imageObjectURL);
+  };
 
   // Fetching data from Flask API Backend
   useEffect(() => {
-    fetch("http://localhost:8080/api/home").then(
-      response => response.json()
-    ).then(
-      data => {
-        setImage(data.image)
-      }
-    )
+    fetchImage();
   }, [])
 
   return (
@@ -32,8 +31,8 @@ const Papercard = () => {
       data-te-ripple-color="light"
     >
 
-      <Image src={wallpaper} alt="placeholder" width={300} height={300} />
-      <p className="flex-center text-gray-200">{image}</p>
+      <Image src={img} alt="placeholder" width={300} height={300} />
+      {/* <p className="flex-center text-gray-200">{image}</p> */}
       {/* Adding an onCLick action which logs a click to the console and gives an animation */}
       <a onClick={handleImageClick}>
         <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"/>
