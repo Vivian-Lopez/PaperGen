@@ -9,18 +9,13 @@
 /coverage
 
 # next.js & venv
-/.next/
 /out/
 /client/.next/
 /client/node_modules/
-.next/
-/client/.next/
-client/.next/
-node_modules/
-/client/node_modules/
-client/node_modules/
+/client/node_modules
+/client/.next
 /server/venv
-venv/
+/server/venv/
 
 # production
 /build
