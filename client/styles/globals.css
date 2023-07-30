@@ -25,7 +25,7 @@
 }
 
 .head_text {
-  @apply text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl;
+  @apply font-extrabold leading-[1.15] text-white sm:text-5xl text-4xl;
 }
 
 .orange_gradient {

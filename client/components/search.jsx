@@ -1,33 +1,47 @@
 "use client";
 
 import { useState } from "react"
+import Feed from "./feed";
+
+const default_image_name = "sunset";
 
 const search = () => {
 
-    const [ searchText, setSearchText] = useState("");
-    const [searchTimeout, setSearchTimeout] = useState(null)
+    const [inputValue, setinputValue] = useState('');
+    const [shouldRenderComponent, setShouldRenderComponent] = useState(false);
 
-    const handleSearchChange = (e) => {
-        clearTimeout(searchTimeout);
-        setSearchText(e.target.value);
+    const handleInputChange = (event) => {
+        setinputValue(event.target.value);
+    };
 
-        //debounce method
-        setSearchTimeout(
-            setTimeout(() => {
-                setSearchText(searchText);
-            }, 500)
-        );
-    }
+    const handleKeyPress = (event) => {
+        if (event.key == 'Enter') {
+            event.preventDefault();
+            if (inputValue==default_image_name) {
+                setShouldRenderComponent(true);
+            } else {
+                setShouldRenderComponent(false);
+            }
+            setinputValue('');
+        }
+    };
     
     return (
-        <form>
-            <input
-                className="search_input"
-                type="text"
-                placeholder="Enter a prompt here"
-                style={{}}
-            />
-        </form>
+        <>
+            <div className="pt-10 w-4/5 sm:w-2/5">
+                <input
+                    className="search_input"
+                    type="text"
+                    placeholder="Enter a prompt here"
+                    value={inputValue}
+                    onKeyPress={handleKeyPress}
+                    onChange={handleInputChange}
+                />
+            </div>
+            <div className="pt-10">
+                {shouldRenderComponent && <Feed />}
+            </div>
+        </>
     );
 };
 

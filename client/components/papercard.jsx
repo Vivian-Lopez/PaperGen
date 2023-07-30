@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+
 const imageUrl = "http://localhost:8080/api/getImage";
 
 const handleImageClick = () => {
@@ -30,7 +31,6 @@ const Papercard = () => {
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-
       <Image src={img} alt="placeholder" width={300} height={300} />
       <p className="flex-center text-gray-200">Placeholder Image</p>
       {/* Adding an onCLick action which logs a click to the console and gives an animation */}
