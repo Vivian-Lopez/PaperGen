@@ -3,6 +3,9 @@
 import { useState } from "react"
 import Feed from "./feed";
 import { publicRuntimeConfig } from 'next/config';
+import process from "process";
+
+const CLIENT_ID = process.env.NEXT_PUBLIC_CLIENT_ID
 
 const search = () => {
 
@@ -17,7 +20,7 @@ const search = () => {
     const handleKeyPress = (event) => {
         setShouldRenderComponent(false);
         if (event.key == 'Enter') {
-            seturl("https://api.unsplash.com/search/photos?page=1&query="+inputValue+"&client_id="+"haCzZSlDYEQw9eGgXQZfTVdcNKkt3QZ_yzR7X95NAnc");
+            seturl("https://api.unsplash.com/search/photos?page=1&query="+inputValue+"&client_id="+CLIENT_ID);
             event.preventDefault();
             setShouldRenderComponent(true);
             setinputValue('');
