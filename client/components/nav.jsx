@@ -8,7 +8,13 @@ const nav = () => {
   return (
     <nav className="flex-between w-full mb-16 relative pl-5 pt-5 pr-5">
 
+      {/* Displays the homepage logo which is a button that links to home and refreshes page */}
       <HomePageLogo />
+
+      {/* Buttons which change page background color (TO BE IMPLEMENTED) */}
+      {/* <div>
+        <Pink />
+      </div> */}
 
       {/* LinkedIn logo which links to my LinkedIn profile */}
       <Link 

@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="relative bg-black">
+      <body className="relative bg-gradient-to-r from-sky-500 to-indigo-500">
         <Nav/>
         {children}
       </body>
