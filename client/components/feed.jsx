@@ -13,7 +13,6 @@ const Feed = (props) => {
 
   const fetchImage = async () => {
     axios.get(url).then(response => {
-      console.log(response);
       setResult(response.data.results);
     })
   }

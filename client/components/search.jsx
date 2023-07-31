@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Feed from "./feed";
-import { publicRuntimeConfig } from 'next/config';
 import process from "process";
 
 const CLIENT_ID = process.env.NEXT_PUBLIC_CLIENT_ID
