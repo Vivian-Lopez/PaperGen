@@ -15,6 +15,7 @@ const search = () => {
     };
 
     const handleKeyPress = (event) => {
+        setShouldRenderComponent(false);
         if (event.key == 'Enter') {
             seturl("https://api.unsplash.com/search/photos?page=1&query="+inputValue+"&client_id="+"haCzZSlDYEQw9eGgXQZfTVdcNKkt3QZ_yzR7X95NAnc");
             event.preventDefault();
