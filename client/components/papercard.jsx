@@ -26,12 +26,12 @@ const Papercard = (props) => {
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-      <Image src={url} alt="placeholder" width={300} height={300} />
+      <img src={url} alt="wallpaper" className="opacity-100 transition duration-300 ease-in-out"/>
       {/* <p className="flex-center text-gray-200">Placeholder Image</p> */}
       {/* Adding an onCLick action which logs a click to the console and gives an animation */}
-      <a onClick={handleImageClick}>
+      {/* <a onClick={handleImageClick}>
         <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"/>
-      </a>
+      </a> */}
     </div>
   )
 }
