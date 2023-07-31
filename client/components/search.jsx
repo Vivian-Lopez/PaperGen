@@ -30,7 +30,7 @@ const search = () => {
                 <input
                     className="search_input"
                     type="text"
-                    placeholder="Enter a prompt here"
+                    placeholder="Enter a prompt here E.g.: Car"
                     value={inputValue}
                     onKeyPress={handleKeyPress}
                     onChange={handleInputChange}
