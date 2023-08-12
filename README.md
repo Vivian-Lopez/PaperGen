@@ -6,7 +6,7 @@ Home Page:
 <img width="1439" alt="image" src="https://github.com/Vivian-Lopez/PaperGen/assets/87879238/b5a41f55-1b83-4df6-887f-990a74bcb4bb">
 
 ##
-This is a full-stack project that allows you to browse/generate your own wallpapers using the Unsplash API
+This is a Next.js project that allows you to browse/generate your own wallpapers using the Unsplash API
 ## 
 
 Tenchnologies this project uses:
